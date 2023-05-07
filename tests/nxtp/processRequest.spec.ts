@@ -2,7 +2,7 @@ import { processRequest } from '../../src/nxtp/processRequest';
 
 describe('processRequest', () => {
   it('should return the timezone code from the buffer', () => {
-    const data = Buffer.from([1, 3, 71, 77, 84, 127]);
+    const data = Buffer.from([1, 0, 122]);
 
     const result = processRequest(data);
 
@@ -30,6 +30,6 @@ describe('processRequest', () => {
 
     expect(() => {
       processRequest(data);
-    }).toThrowError('Checksum mismatch: expected: 128, got: 123');
+    }).toThrowError('Checksum mismatch: expected: 128, got: 39');
   });
 });

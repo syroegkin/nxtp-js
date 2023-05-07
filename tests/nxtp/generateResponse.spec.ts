@@ -42,8 +42,8 @@ describe('generateResponse', () => {
         8, // Time length
         50, 53, 47, 49, 50, 47, 50, 48, 49, 57, // Date as ASCII
         50, 49, 58, 52, 51, 58, 50, 53, // Time as ASCII
-        120, // Checksum
-      ])
+        117, // Checksum
+      ]),
     );
   });
 });

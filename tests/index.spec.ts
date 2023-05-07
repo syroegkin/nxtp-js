@@ -1,6 +1,6 @@
 import { describe } from 'node:test';
-import { Socket } from 'node:net';
-import { server } from '../src/index';
+import { Server, Socket } from 'node:net';
+import { createServer } from '../src/server';
 
 function createClient(): Promise<Socket> {
   return new Promise((resolve, reject) => {
@@ -15,13 +15,19 @@ function createClient(): Promise<Socket> {
   });
 }
 
-describe.skip('nxtp-js', () => {
+let server: Server;
+
+describe('nxtp-js', () => {
   let client: Socket;
   beforeEach(async () => {
+    server = await createServer(() => {
+      console.log('Connected');
+    });
     client = await createClient();
   });
   afterAll(() => {
     server.close();
+    client.destroy();
   });
 
   it('should connect', (done) => {

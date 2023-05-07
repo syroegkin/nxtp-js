@@ -1,7 +1,7 @@
 import net from 'node:net';
-import { processRequest } from './nxtp/processRequest.js';
-import { nxtpToIana } from './utils/nxtpToIana.js';
-import { generateResponse } from './nxtp/generateResponse.js';
+import { processRequest } from './nxtp/processRequest';
+import { nxtpToIana } from './utils/nxtpToIana';
+import { generateResponse } from './nxtp/generateResponse';
 
 function sockerWritePromise(
   socket: net.Socket,

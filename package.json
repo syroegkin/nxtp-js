@@ -2,9 +2,9 @@
   "name": "nxtp-js",
   "version": "1.0.0",
   "description": "nxtp server in ts",
+  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -55,6 +55,8 @@
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",
     "test": "jest",
+    "test:lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "start": "node ./dist/index.js",
     "commit": "git-cz"
   },

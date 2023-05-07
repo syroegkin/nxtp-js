@@ -1,5 +1,5 @@
 import { WINDOWS_TO_IANA_MAP, IanaName } from 'windows-iana';
-import { NxtpTimezones } from './timezones.js';
+import { NxtpTimezones } from './timezones';
 
 // Prepare the map considering the format sent
 const tzMap = WINDOWS_TO_IANA_MAP.map((entry) => ({

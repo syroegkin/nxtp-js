@@ -1,4 +1,8 @@
-import { createServer } from './server.js';
-import { nxtp } from './nxtp.js';
+import { createServer } from './server';
+import { nxtp } from './nxtp';
 
-await createServer(nxtp);
+async function main() {
+  await createServer(nxtp);
+}
+
+main();
