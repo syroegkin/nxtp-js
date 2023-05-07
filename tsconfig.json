@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "nodenext",
+    "outDir": "./dist",
+    "allowJs": false,
+    "resolveJsonModule": false,
+    "moduleResolution": "node16",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "declaration": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests/**/*"
+  ]
+}
