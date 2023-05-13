@@ -70,7 +70,7 @@
     "timeserver"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/syroegkin/nxtp-js/issues"
   },
