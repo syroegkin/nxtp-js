@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nxtp_server:
+    restart: always
+    build: .
+    container_name: nxtp_server
+    ports:
+      - "12300:12300"
+
