@@ -1,4 +1,3 @@
-import { describe } from 'node:test';
 import { Server, Socket } from 'node:net';
 import { createServer } from '../src/server';
 

@@ -8,7 +8,7 @@ jest.mock('date-fns-tz', () => ({
 
 describe('getDateTimeInTimeZone', () => {
   it('should return the formatted date and time in the specified timezone', () => {
-    const ianas: IanaName[] = ['Europe/Paris'];
+    const ianas: IanaName[] = ['Europe/Paris', 'America/New_York'];
     const date = new Date();
 
     (formatInTimeZone as jest.Mock).mockReturnValueOnce('25/12/2019');
