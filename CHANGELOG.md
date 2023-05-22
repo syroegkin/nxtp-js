@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/syroegkin/nxtp-js/compare/v1.2.0...v1.2.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* **typo:** fix annoying typo ([0e8e984](https://github.com/syroegkin/nxtp-js/commit/0e8e98437ce15f0e4750d3ec763b6272b3214b1b))
+
 # [1.2.0](https://github.com/syroegkin/nxtp-js/compare/v1.1.0...v1.2.0) (2023-05-22)
 
 
