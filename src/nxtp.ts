@@ -19,8 +19,6 @@ function sockerWritePromise(
 }
 
 export function nxtp(socket: net.Socket) {
-  // @todo: Add the time when it gets connected, remoted IP address and the timezone requested
-  // I really keen to have some statistics on the server
   const { remoteAddress } = socket;
   console.log(`${remoteAddress}: new lient connected`);
 
