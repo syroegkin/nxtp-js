@@ -25,6 +25,11 @@ By default, the library listens on port 12300. However, you can configure a diff
 PORT=12500 npm start
 ```
 
+Alternatively you can use provided docker-compose file:
+```shell
+docker-compose up -d
+```
+
 The public time server is available at http://time.zx.in.net:12300
 
 ZX Spectrum Next is a trademark of SpecNext Ltd.
