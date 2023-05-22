@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/syroegkin/nxtp-js/compare/v1.0.0...v1.1.0) (2023-05-13)
+
+
+### Features
+
+* **docker:** add simple docker-composer config for the local build ([76464db](https://github.com/syroegkin/nxtp-js/commit/76464db5cc2de239f4d8c5285aad3b81f19ad9cc))
+* **docker:** dockerize the project ([d18d232](https://github.com/syroegkin/nxtp-js/commit/d18d232a29401d6bfe5ca871df9423aba04c6058))
+* **license:** apply GPL, remove default MIT ([5916272](https://github.com/syroegkin/nxtp-js/commit/591627259a98841b1834b1b902aa14992b9d7d56))
+
 # 1.0.0 (2023-05-07)
 
 
