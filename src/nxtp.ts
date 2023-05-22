@@ -20,7 +20,7 @@ function sockerWritePromise(
 
 export function nxtp(socket: net.Socket) {
   const { remoteAddress } = socket;
-  console.log(`${remoteAddress}: new lient connected`);
+  console.log(`${remoteAddress}: new client connected`);
 
   socket.on('data', async (data: Buffer) => {
     try {
