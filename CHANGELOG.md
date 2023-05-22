@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/syroegkin/nxtp-js/compare/v1.1.0...v1.2.0) (2023-05-22)
+
+
+### Features
+
+* **logging:** add more logging ([b15a417](https://github.com/syroegkin/nxtp-js/commit/b15a417462495265d1811c8045a9b681e890250b))
+
 # [1.1.0](https://github.com/syroegkin/nxtp-js/compare/v1.0.0...v1.1.0) (2023-05-13)
 
 
