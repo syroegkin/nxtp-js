@@ -1,8 +1,23 @@
 import { WINDOWS_TO_IANA_MAP, IanaName } from 'windows-iana';
 import { NxtpTimezones } from './timezones';
 
+const edgeCases = {
+  GMT: 'GMTStandardTime',
+  EST: 'EasternStandardTime',
+  'Mid-AtlanticStandardTime': 'UTC-02',
+  CET: 'CentralEuropeStandardTime',
+  KamchatkaStandardTime: 'FijiStandardTime',
+};
+
+interface TzMap {
+  readonly windowsName: string;
+  readonly territory: string;
+  readonly iana: readonly IanaName[];
+  nxtpName: string;
+}
+
 // Prepare the map considering the format sent
-const tzMap = WINDOWS_TO_IANA_MAP.map((entry) => ({
+export const tzMap: TzMap[] = WINDOWS_TO_IANA_MAP.map((entry) => ({
   ...entry,
   nxtpName: entry.windowsName.replace(/\s/g, ''),
 }));
@@ -13,9 +28,10 @@ export function nxtpToIana(tz: string): IanaName[] {
   if (!nxtpTimezones.includes(tz)) {
     throw new Error(`Unknown timezone: ${tz}`);
   }
-  if (tz === 'GMT') {
-    tz = 'GMTStandardTime';
+  if (edgeCases[tz]) {
+    tz = edgeCases[tz];
   }
+
   const set = new Set<IanaName>();
 
   tzMap.filter((it) => it.nxtpName === tz)
