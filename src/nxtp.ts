@@ -20,23 +20,20 @@ function sockerWritePromise(
 
 export function nxtp(socket: net.Socket) {
   const { remoteAddress } = socket;
-  console.log(`${remoteAddress}: new client connected`);
 
   socket.on('data', async (data: Buffer) => {
     try {
       // Process request
       const nxtpTimezone = processRequest(data);
-      console.log(`${remoteAddress}: Requesting time for ${nxtpTimezone}`);
       // Convert timezone to IANA
       const iana = nxtpToIana(nxtpTimezone);
-      console.log(`${remoteAddress}: transformed to ${iana}`);
       // Generate response
       const response = generateResponse(iana);
       // Send response
       await sockerWritePromise(socket, response);
       // Close socket
       socket.destroy();
-      console.log(`${remoteAddress}: close connection`);
+      console.log(`${remoteAddress}: Requested time for ${nxtpTimezone}, resolved to ${iana}`);
     } catch (e: unknown) {
       console.log(`${remoteAddress}: ${(e as Error).message}`);
       socket.destroy();
