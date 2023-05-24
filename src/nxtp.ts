@@ -33,7 +33,7 @@ export function nxtp(socket: net.Socket) {
       await sockerWritePromise(socket, response);
       // Close socket
       socket.destroy();
-      console.log(`${remoteAddress}: Requested time for ${nxtpTimezone}, resolved to ${iana}`);
+      console.log(`${remoteAddress}: Requested time for ${nxtpTimezone}, resolved to ${iana[0]}`);
     } catch (e: unknown) {
       console.log(`${remoteAddress}: ${(e as Error).message}`);
       socket.destroy();
