@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/syroegkin/nxtp-js/compare/v1.2.1...v1.2.2) (2023-05-24)
+
+
+### Bug Fixes
+
+* resolve edge cases for the timezones, some of those weren't resolved ([443ce0b](https://github.com/syroegkin/nxtp-js/commit/443ce0b113d9ac360cfd1faaff0c3ec700b202a3))
+
 ## [1.2.1](https://github.com/syroegkin/nxtp-js/compare/v1.2.0...v1.2.1) (2023-05-22)
 
 
