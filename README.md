@@ -45,4 +45,33 @@ The public time server is available at
 * http://time.zx.in.net:12300
 * http://time1.zx.in.net:12300
 
+On your ZX Spectrum Nextr you can set up fallback servers, so if one is not available, system will try to fallback to the backup server.
+
+Your `autoexec.bas` file may look like this:
+
+```basic
+   5 REM First server
+  10 ON ERROR GO TO 50
+  20 .nxtp time.zx.in.net 12300 -z=W.EuropeStandardTime
+  30 ON ERROR
+  45 REM Second server
+  40 GO TO 9999
+  50 ON ERROR GO TO 90
+  55 PAUSE 100
+  60 .nxtp time.nxtel.org 12300 -z=W.EuropeStandardTime
+  70 ON ERROR
+  80 GO TO 9999
+  85 REM Third server
+  90 IN ERROR GO TO 130
+  95 PAUSE 100
+ 100 .nxtp time1.zx.in.net 12300 -z=W.EuropeStandardTime
+ 110 ON ERROR
+ 120 GO TO 9999
+ 130 PRINT: PRINT "Can not fetch time"
+9997 GO TO 9999
+9998 SAVE "c:/nextzxos/autoexec.bas" LINE 0
+9999 ERASE
+
+```
+
 ZX Spectrum Next is a trademark of SpecNext Ltd.
