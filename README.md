@@ -54,8 +54,8 @@ Your `autoexec.bas` file may look like this:
   10 ON ERROR GO TO 50
   20 .nxtp time.zx.in.net 12300 -z=W.EuropeStandardTime
   30 ON ERROR
-  45 REM Second server
   40 GO TO 140
+  45 REM Second server
   50 ON ERROR GO TO 90
   55 PAUSE 100
   60 .nxtp time.nxtel.org 12300 -z=W.EuropeStandardTime
