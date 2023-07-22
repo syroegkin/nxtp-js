@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/syroegkin/nxtp-js/compare/v1.2.3...v1.2.4) (2023-07-22)
+
+
+### Bug Fixes
+
+* **docker:** build image docker along with the new package release, publish it ([33ff8bd](https://github.com/syroegkin/nxtp-js/commit/33ff8bd543edff38d46c82a04749627c56c4ced5))
+
 ## [1.2.3](https://github.com/syroegkin/nxtp-js/compare/v1.2.2...v1.2.3) (2023-05-24)
 
 
