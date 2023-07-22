@@ -45,7 +45,7 @@ The public time server is available at
 * http://time.zx.in.net:12300
 * http://time1.zx.in.net:12300
 
-On your ZX Spectrum Nextr you can set up fallback servers, so if one is not available, system will try to fallback to the backup server.
+On your ZX Spectrum Nextr, you have the option to configure fallback servers. In the event that one server is unavailable, the system will automatically attempt to switch to a backup server.
 
 Your `autoexec.bas` file may look like this:
 
