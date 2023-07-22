@@ -30,6 +30,19 @@ Alternatively you can use provided docker-compose file:
 docker-compose up -d
 ```
 
-The public time server is available at http://time.zx.in.net:12300
+There is an available pre-built Docker image that you can utilize:
+```shell
+docker pull ghcr.io/syroegkin/nxtp-js:latest
+```
+
+Docker-compose uses this pre-built image by default, but if you wish, you can build it by yourself:
+* Open docker-compose.yml.
+* Comment out the image: line.
+* Uncomment the build: line.
+
+
+The public time server is available at 
+* http://time.zx.in.net:12300
+* http://time1.zx.in.net:12300
 
 ZX Spectrum Next is a trademark of SpecNext Ltd.
