@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/syroegkin/nxtp-js/compare/v1.2.2...v1.2.3) (2023-05-24)
+
+
+### Bug Fixes
+
+* **log length:** to save space show only first iana item ([934cfef](https://github.com/syroegkin/nxtp-js/commit/934cfef51ac29fb5b0824463dcd1f63183c361df))
+
 ## [1.2.2](https://github.com/syroegkin/nxtp-js/compare/v1.2.1...v1.2.2) (2023-05-24)
 
 
