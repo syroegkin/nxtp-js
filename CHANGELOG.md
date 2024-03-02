@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/syroegkin/nxtp-js/compare/v1.2.4...v1.2.5) (2024-03-02)
+
+
+### Bug Fixes
+
+* **chore:** security dependencies upgrade ([d236c72](https://github.com/syroegkin/nxtp-js/commit/d236c726e13b956cde394973b58f522c5e1abc1a))
+
 ## [1.2.4](https://github.com/syroegkin/nxtp-js/compare/v1.2.3...v1.2.4) (2023-07-22)
 
 
