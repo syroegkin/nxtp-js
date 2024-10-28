@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/syroegkin/nxtp-js/compare/v1.3.1...v1.3.2) (2024-10-28)
+
+
+### Bug Fixes
+
+* **docker:** fix docker build script ([f2da1a2](https://github.com/syroegkin/nxtp-js/commit/f2da1a2433320dbb2221d5c5138ab784fd486b9d))
+
 ## [1.3.1](https://github.com/syroegkin/nxtp-js/compare/v1.3.0...v1.3.1) (2024-10-28)
 
 
