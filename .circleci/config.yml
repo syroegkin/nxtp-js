@@ -68,9 +68,6 @@ jobs:
       - image: cimg/base:current-22.04
     steps:
       - checkout
-      - run:
-          name: Install dependencies
-          command: apk add --no-cache jq
       - setup_remote_docker:
           docker_layer_caching: true
       - run:
