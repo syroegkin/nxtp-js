@@ -12,7 +12,7 @@ RUN npm install && \
 
 # ---------------------------------------------------------------- #
 
-FROM node:node:22.9-alpine3.20
+FROM node:22.9-alpine3.20
 
 COPY --from=intermediate /usr/src/app/package.json /usr/src/app/package.json
 COPY --from=intermediate /usr/src/app/dist /usr/src/app/dist
