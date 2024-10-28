@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/syroegkin/nxtp-js/compare/v1.2.5...v1.3.0) (2024-10-28)
+
+
+### Features
+
+* **upgrade:** use node 22 ([5c974dc](https://github.com/syroegkin/nxtp-js/commit/5c974dcf74a056ef280a24cfaa39f62f369d731a))
+
 ## [1.2.5](https://github.com/syroegkin/nxtp-js/compare/v1.2.4...v1.2.5) (2024-03-02)
 
 
