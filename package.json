@@ -1,6 +1,6 @@
 {
   "name": "nxtp-js",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "nxtp server in ts",
   "private": true,
   "main": "dist/index.js",

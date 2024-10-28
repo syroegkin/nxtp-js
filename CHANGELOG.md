@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/syroegkin/nxtp-js/compare/v1.3.2...v1.3.3) (2024-10-28)
+
+
+### Bug Fixes
+
+* **dockerfile:** fix double node: typo ([012efbd](https://github.com/syroegkin/nxtp-js/commit/012efbd26a2d72cbf8fb2b71c0945659b68f0f6c))
+
 ## [1.3.2](https://github.com/syroegkin/nxtp-js/compare/v1.3.1...v1.3.2) (2024-10-28)
 
 
