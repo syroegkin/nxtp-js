@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "module": "commonjs",
+    "module": "node16",
     "outDir": "./dist",
     "allowJs": false,
     "resolveJsonModule": false,
@@ -9,7 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "sourceMap": false,
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true,
   },
   "include": [
     "src/**/*"

@@ -1,4 +1,4 @@
-FROM node:18.16.0-alpine3.16 as intermediate
+FROM node:22.9-alpine3.20 as intermediate
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -12,7 +12,7 @@ RUN npm install && \
 
 # ---------------------------------------------------------------- #
 
-FROM node:18.16.0-alpine3.16
+FROM node:node:22.9-alpine3.20
 
 COPY --from=intermediate /usr/src/app/package.json /usr/src/app/package.json
 COPY --from=intermediate /usr/src/app/dist /usr/src/app/dist
