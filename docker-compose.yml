@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   nxtp_server:
     restart: always
