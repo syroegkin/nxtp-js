@@ -62,7 +62,7 @@ Your `autoexec.bas` file may look like this:
   70 ON ERROR
   80 GO TO 140
   85 REM Third server
-  90 IN ERROR GO TO 130
+  90 ON ERROR GO TO 130
   95 PAUSE 100
  100 .nxtp time1.zx.in.net 12300 -z=W.EuropeStandardTime
  110 ON ERROR
