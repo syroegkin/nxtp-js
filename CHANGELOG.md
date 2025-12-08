@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/syroegkin/nxtp-js/compare/v1.3.3...v1.3.4) (2025-12-08)
+
+
+### Bug Fixes
+
+* security updates ([b9079f3](https://github.com/syroegkin/nxtp-js/commit/b9079f350ca182018189c37e913f15458878a91b))
+
 ## [1.3.3](https://github.com/syroegkin/nxtp-js/compare/v1.3.2...v1.3.3) (2024-10-28)
 
 
